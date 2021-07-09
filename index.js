@@ -1,3 +1,4 @@
+/*
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
@@ -48,3 +49,27 @@ http
     }
   })
   .listen(8080);
+  */
+const express = require("express");
+const app = express();
+const port = 8000;
+
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
+app.get("/about", (req, res) => {
+  res.sendFile(__dirname + "/about.html");
+});
+
+app.get("/contact-me", (req, res) => {
+  res.sendFile(__dirname + "/contact-me.html");
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(__dirname + "/404.html");
+});
+
+app.listen(port, () => {
+  console.log(`App listening on port ${port}`);
+});

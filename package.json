@@ -1,0 +1,22 @@
+{
+  "name": "info-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroEnciso/node-info-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PedroEnciso/node-info-site/issues"
+  },
+  "homepage": "https://github.com/PedroEnciso/node-info-site#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
